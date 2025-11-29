@@ -10,6 +10,7 @@
   <!-- <link rel="icon" type="image/png" href="images/stanford_seal.png"> -->
 </head>
 
+
 <body>
   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
@@ -34,41 +35,59 @@ Previously I’ve had the chance to work on applications of machine learning in 
             </td>
           </tr>
         </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-<!--           <heading>Research</heading>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              
-                <p> The goals of my research are to utilize computational tools like machine learning to detect and predict exoplanet transit parameters given a light curve and enable citizen scientists/amateur astronomers to do meaningful research in this space. I also want to explore the application of RL agents to beat video games.
-              <p>
-            </td>
-          </tr>
-        </tbody></table> -->
+        
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <heading>Publications & Preprints</heading>
 
-
-
+          <!-- NEW ENTRY: Earth2EMIT -->
           <tr>
             <td width="75%" valign="middle">
-              <a id="MCG_journal">
-                <papertitle>Structured spectral reconstruction for scalable soil organic carbon inference.</papertitle>
+              <a id="Earth2EMIT">
+                <papertitle>Earth2EMIT: Spatiotemporal autoencoders for orbital-proximal fusion</papertitle>
               </a>
               <br>
-              Evan Coleman, <strong>Sujay Nair</strong>, Xinyi Zeng, Elsa Olivetti.
+              <strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang
               <br>
-              International Conference on Learning Representations (ICLR) Tackling Climate Change with Machine Learning Workshop 2024
+              <em>Nature (Planned)</em>
               <br>
-              <p></p>
-              <p>
-                In this project we developed a new architecture for inferring soil properties such as carbon from spectra.
-              </p>
+              <p>Building all-in-one soil property prediction pipeline using NASA EMIT hyperspectral satellite data fused with geospatial data, atmospheric data, and high-quality field measurements from YardStick PBC. We use a physics-guided autoencoder that learns spectral-spatial embeddings to reconstruct the soil spectra and predict soil properties.</p>
+            </td>
+          </tr>
+
+          <!-- NEW ENTRY: Masked Mineral Modeling -->
+          <tr>
+            <td width="75%" valign="middle">
+              <a id="MMM">
+                <papertitle>Masked Mineral Modeling: Continent-scale mineral prospecting via geospatial infilling</papertitle>
+              </a>
+              <br>
+              <strong>Sujay Nair</strong>, Evan Coleman, Elsa Olivetti, Sherrie Wang
+              <br>
+              <em>Association for the Advancement of Artificial Intelligence (AAAI)</em>, 2026
+              <br>
+              <p>Trained a U-net ResNet to infill the presence of masked minerals based on surrounding mineral resources, geophysical data (fault lines, elevation, rockype, etc), and agronomic data (RaCA). Model outperformed ViT and Kriging with test dice coefficient of 0.31.</p>
+            </td>
+          </tr>
+
+          <!-- UPDATED ENTRY: Structured spectral reconstruction -->
+          <tr>
+            <td width="75%" valign="middle">
+              <a id="SSR">
+                <papertitle>Structured spectral reconstruction for scalable soil organic carbon inference</papertitle>
+              </a>
+              <br>
+              Evan Coleman, <strong>Sujay Nair</strong>, Xinyi Zeng, Elsa Olivetti
+              <br>
+              <em>International Conference on Learning Representations (ICLR) Tackling Climate Change with Machine Learning Workshop</em>, 2024
+              <br>
+              <p>Used USDA RaCA data to reconstruct SOC spectra alongside SOC regression to improve model generalization out of distribution. Also used a physics-based reconstruction pipeline to provide an interpretable spectral signature of SOC and avoid generalization failures through fine-tuning.</p>
             </td>
           </tr>
           
+          <!-- EXISTING ENTRIES -->
           <tr>
             <td width="75%" valign="middle">
-              <a id="MCG_journal">
+              <a id="Exoplanet_DL">
                 <papertitle>Using Deep Learning to Predict Exoplanet Planetary Parameters based on Generated Light Curves</papertitle>
               </a>
               <br>
@@ -76,7 +95,6 @@ Previously I’ve had the chance to work on applications of machine learning in 
               <br>
               2021
               <br>
-              <p></p>
               <p>In this project we train a 1D Convolutional Neural Network to take as input artificially generated light curves mimicking TESS observations at a 2 min cadence and outputa list with predicted planetary parameters-namely, Rp/Rs, Period, a/Rs, and T-mid.Comparing to the current state of the art algorithm, Transit Least Squares (TLS),which does not rely on machine learning, our Rp/Rs mean absolute error is roughly the same.  We are still tuning the model to reach TLS performance for Period.</p>
             </td>
           </tr>
@@ -92,7 +110,6 @@ Previously I’ve had the chance to work on applications of machine learning in 
               <em>Washington State Science and Engineering Fair(WSSEF)</em>, 2021
               <br>
               <a href="https://www.youtube.com/watch?v=g2WmkFi2WwA&list=WL&index=1&t=4s">Additional video project summary</a>
-              <p></p>
               <p>This  summarizes  my  research  in  the  area  of  updating  exoplanet  transits,  crowd-sourcing the exoplanet transit effort, and deep learning for exoplanet detection.</p>
             </td>
           </tr>
@@ -274,3 +291,4 @@ Previously I’ve had the chance to work on applications of machine learning in 
   
   <a href="https://jonbarron.info/">Website Template</a>
 </html>
+
