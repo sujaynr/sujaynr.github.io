@@ -1,265 +1,684 @@
-<!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Sujay Nair</title>
-  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="author" content="Sujay Nair">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/png" href="images/stanford_seal.png"> -->
+  <meta name="description" content="Sujay Nair — AI researcher at MIT MCSC and Georgia Tech. Research in hyperspectral remote sensing, geospatial foundation models, and earth observation.">
+  <title>Sujay Nair — Research Portfolio</title>
+  <link rel="stylesheet" href="stylesheet.css">
 </head>
-
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:63%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Sujay Nair</name>
-              </p>
-              <p>I’m a fourth year math and CS double major at Georgia Tech. I also work as a student researcher at the MIT Climate and Sustainability Consortium where I’m lucky to be advised by Dr. Evan Coleman, Prof. Sherrie Wang, and Prof. Elsa Olivetti. My research focuses on using machine learning to infer properties of soil, with applications in carbon capture and mineral discovery. 
 
-Previously I’ve had the chance to work on applications of machine learning in sports, robotics, and astronomy, and have spent time at NASA JPL. Outside of work I enjoy pottery, chess, basketball and football.
-              <p style="text-align:center">
-                <a href="mailto:snair303@gatech.edu">Email</a> &nbsp/&nbsp
-                <a href="Sujay_Nair_Resume.pdf">CV</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=axdQX-EAAAAJ&hl=en">Google Scholar</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:40%;max-width:40%">
-              <a href="headPhoto.JPG"><img style="width:100%;max-width:100%" alt="profile photo" src="headPhoto.JPG" class="hoverZoomLink"></a>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <heading>Publications & Preprints</heading>
+  <!-- ══════════════════════════════════════════
+       NAV
+  ══════════════════════════════════════════ -->
+  <nav class="nav" role="navigation" aria-label="Primary">
+    <div class="nav__inner">
+      <a href="#hero" class="nav__name">Sujay Nair</a>
+      <ul class="nav__links">
+        <li><a href="#pillars">Research</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#methodology">Methods</a></li>
+        <li><a href="#education">Education/Work</a></li>
+      </ul>
+    </div>
+  </nav>
 
-          <!-- ENTRY: Earth2EMIT (Planned - No Link) -->
-          <tr>
-            <td width="75%" valign="middle">
-                <papertitle>Earth2EMIT: Spatiotemporal autoencoders for orbital-proximal fusion</papertitle>
-              <br>
-              <strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang
-              <br>
-              <em>Nature (Planned)</em>
-              <br>
-              <p>Building all-in-one soil property prediction pipeline using NASA EMIT hyperspectral satellite data fused with geospatial data, atmospheric data, and high-quality field measurements from YardStick PBC. We use a physics-guided autoencoder that learns spectral-spatial embeddings to reconstruct the soil spectra and predict soil properties.</p>
-            </td>
-          </tr>
+  <div class="page">
 
-          <!-- ENTRY: Masked Mineral Modeling (Linked) -->
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2511.09722">
-                <papertitle>Masked Mineral Modeling: Continent-scale mineral prospecting via geospatial infilling</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Evan Coleman, Elsa Olivetti, Sherrie Wang
-              <br>
-              <em>Association for the Advancement of Artificial Intelligence (AAAI)</em>, 2026
-              <br>
-              <p>Trained a U-net ResNet to infill the presence of masked minerals based on surrounding mineral resources, geophysical data (fault lines, elevation, rockype, etc), and agronomic data (RaCA). Model outperformed ViT and Kriging with test dice coefficient of 0.31.</p>
-            </td>
-          </tr>
+    <!-- ══════════════════════════════════════════
+         HERO
+    ══════════════════════════════════════════ -->
+    <section class="hero" id="hero">
+      <div class="hero__inner">
 
-          <!-- ENTRY: Structured spectral reconstruction (Linked) -->
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf">
-                <papertitle>Structured spectral reconstruction for scalable soil organic carbon inference</papertitle>
-              </a>
-              <br>
-              Evan Coleman, <strong>Sujay Nair</strong>, Xinyi Zeng, Elsa Olivetti
-              <br>
-              <em>International Conference on Learning Representations (ICLR) Tackling Climate Change with Machine Learning Workshop</em>, 2024
-              <br>
-              <p>Used USDA RaCA data to reconstruct SOC spectra alongside SOC regression to improve model generalization out of distribution. Also used a physics-based reconstruction pipeline to provide an interpretable spectral signature of SOC and avoid generalization failures through fine-tuning.</p>
-            </td>
-          </tr>
+        <div class="hero__content">
+          <p class="hero__eyebrow">Georgia Tech &nbsp;·&nbsp; MIT MCSC &nbsp;·&nbsp; MIT Earth Intelligence Lab</p>
+          <h1 class="hero__name">Sujay Nair</h1>
+          <div class="hero__rule"></div>
 
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://aas238-aas.ipostersessions.com/default.aspx?s=D6-D4-C6-F3-C8-6A-7C-61-7B-92-C7-51-44-7D-CB-65" id="MCG_journal">
-                <papertitle>Sequence-based Encoding of Light Curves for Exoplanet Detection</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Kyle Pearson
-              <br>
-              <em>AAS 238</em>, 2021
-              <br>
-              <p></p>
-              <p>We explore the benefits of using recurrent neural networks for predicting the exis-tence of an exoplanet.  We tested LSTM layers in our Convolutional Neural Network(CNN) versus our standard CNN with synthetically generated light curves with vary-ing amounts of noise.</p>
-            </td>
-          </tr>
+          <p class="hero__statement">My research sits at the intersection of machine learning and planetary-scale sensing — training foundation models that map Earth's mineral resources via satellite hyperspectral imagery, and building physics-guided systems that extract geochemical signal from high-dimensional observational data to advance carbon capture and critical mineral discovery.</p>
 
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://aas237-aas.ipostersessions.com/default.aspx?s=58-67-47-73-08-3F-2E-E4-B8-37-6A-4C-97-26-81-F4" id="MCG_journal">
-                <papertitle>Using Deep Learning with Phase Folded Light Curves to Detect Exoplanets</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Kyle Pearson
-              <br>
-              <em>AAS 237</em>, 2020
-              <br>
-              <p></p>
-              <p>We extend the work of transit detection by utilizing phase folded light curves to traina convolutional neural network to predict the existence of an exoplanet.  We propose a scheme to generate synthetic data mimicking TESS observations from a single sector where the positive training samples are randomly generated transit data phasefolded at the correct period, and the negative training samples are folded at a randomincorrect period.</p>
-            </td>
-          </tr>
+          <p class="hero__bio">Fourth-year double major in Computer Science and Mathematics at Georgia Tech (GPA&nbsp;3.9). Research affiliate at the MIT Climate &amp; Sustainability Consortium and Earth Intelligence Lab, advised by Dr.&nbsp;Evan Coleman, Prof.&nbsp;Sherrie Wang, and Prof.&nbsp;Elsa Olivetti. Publications at AAAI, ICLR, Nature&nbsp;(planned).</p>
 
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://aas237-aas.ipostersessions.com/Default.aspx?s=32-2B-13-04-05-67-0B-58-28-7A-EB-8B-51-D3-15-56" id="MCG_journal">
-                <papertitle>Citizen Scientist Transit and Comparison Star Analysis of HATS-4 b with the East Bay Astronomical Society</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Caroline Scolari, Jay Kelath, Aishwarya Rammohan, Richard Ozer, Gloria Ng, Wesley Chang, Pat Boyce
-              <br>
-              <em>AAS 237</em>, 2020
-              <br>
-              <a href="https://www.youtube.com/watch?v=KGdnoKfhMPw">Project training example</a> 
-              <p></p>
-              <p>6 members of the East Bay Astronomical Society will be introduced to the ExoplanetTransit Interpretation Code (EXOTIC) and will be guided through a complete transitand reference star analysis</p>
-            </td>
-          </tr>
+          <div class="hero__links">
+            <a href="mailto:snair303@gatech.edu" class="btn btn--primary">Email</a>
+            <a href="CV_Sujay_MARCH26.pdf" class="btn btn--outline">CV</a>
+            <a href="https://scholar.google.com/citations?user=axdQX-EAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn--outline">Google Scholar</a>
+          </div>
+        </div>
 
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://nexsci.caltech.edu/conferences/exodem/posters/Nair_EXOdemPosterFinal.pdf" id="MCG_journal">
-                <papertitle>Transit Analysis of TOI 1780.01</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>
-              <br>
-              <em>Exodem 2020 Caltech</em>, 2020
-              <br>
-              <p></p>
-              <p>We analyze the mid-transit times and comparison stars for the exoplanet TOI 1780.01.</p>
-            </td>
-          </tr>
+        <div class="hero__photo-col">
+          <img src="headPhoto.JPG" alt="Sujay Nair" class="hero__photo">
+          <span class="hero__photo-caption">Atlanta, GA &nbsp;·&nbsp; San Francisco, CA &nbsp;·&nbsp; Cambridge, MA</span>
+        </div>
 
-          <tr>
-            <td width="75%" valign="middle">
-              <a>
-                <papertitle>Mid-transit and Reference Star Analysis of HAT-P-37 b and Kepler-45 b</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>
-              <br>
-              <em>Exoplanet3 Heidelberg</em>, 2020
-              <br>
-              <a href="https://hdconfsys.zah.uni-heidelberg.de/exoplanets3/poster_list.html">Conference Page (Posters not publicly available)</a> 
-              <p></p>
-              <p>We analyzed the mid-transit times and comparison stars for the exoplanets HAT-P-37 b and Kepler-45 b</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://iopscience.iop.org/article/10.3847/2515-5172/ab98f5" id="MCG_journal">
-                <papertitle>Transit Analysis of Exoplanets TrES-5b and WASP-43b</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Jonathan Varghese
-              <br>
-              <em> Research Notes of the AAS (RNAAS), 236th AAS</em>, 2020
-              <br>
-              <a href="https://www.youtube.com/watch?v=pXhum_21gyY">Additional project interview</a> 
-              <p></p>
-              <p>We  analyzed  the  transit  properties  of  TrES-5b  using  many  comparison  stars  and explored its extremely dim host star.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2006.12658">
-                <papertitle>Analysis of Candidate Exoplanet TOI717.01 and Confirmed HAT-P-3b</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Krithi Koodli, Elliott Chalcraft, Kalee Tock
-              <br>
-              <em>SAS</em>, 2020
-              <br>
-              <p></p>
-              <p>Analysis of transit properties of 2 exoplanets with 7 total image reduction methods.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2006.13324">
-                <papertitle>Analysis  of  HAT-P-23b,  Qatar-1b,  WASP-2b,  and  WASP-33b  with  an Optimized EXOplanet Transit Interpretation Code</papertitle>
-              </a>
-              <br>
-              <strong>Sujay Nair</strong>, Jonathan Varghese, Kalee Tock, Robert Zellem
-              <br>
-              <em>  Society for Astronomical Sciences (SAS)</em>, 2020
-              <br>
-              <p></p>
-              <p>We analyzed 4 exoplanets and edited the Exoplanet Transit Interpretation Code to provide faster photometric analysis.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="http://www.jdso.org/volume16/number2/Caputo_173_182.pdf" id="MCG_journal">
-                <papertitle>Investigation of 14 Wide Common Proper Motion Doubles</papertitle>
-              </a>
-              <br>Caputo et al.
-              <br>
-              <em>Journal of Double Star Observations (JDSO)</em>, 2020
-              <br>
-              <p></p>
-              <p>We  investigated  14  physical  systems  from  the  Washington  Double  Star  Catalogue. We used our measurements to assess the probability of gravitational relationships.</p>
-            </td>
-          </tr>
-
-          <tr>
-            <td width="75%" valign="middle">
-              <a href="https://arxiv.org/abs/2003.09046" id="MCG_journal">
-                <papertitle>Utilizing Small Telescopes by Citizen Scientists for Transiting Exoplanet Follow-Up</papertitle>
-              </a>
-              <br>Zellem et al.
-              <br>
-              <em> Publications of the Astronomical Society of the Pacific (PASP)</em>, 2020
-              <br>
-              <p></p>
-              <p>From analyzing mid-transit times for many exoplanets, observations from small (<1m)telescopes can increase observational efficiency of large observatories.</p>
-            </td>
-          </tr>
+      </div>
+    </section>
 
 
-          <tr>
+    <!-- ══════════════════════════════════════════
+         RESEARCH PILLARS
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt" id="pillars">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__num">01</span>
+          <h2 class="section__title">Research Pillars</h2>
+        </div>
 
-            <td width="75%" valign="middle">
-              <a href="http://tiny.cc/oykfqz" id="MCG_journal">
-                <papertitle>Freshening Exoplanet Transit Midpoints</papertitle>
-              </a>
-              <br>
-              Quinn Perian, <strong>Sujay Nair</strong>, Kalee Tock
-              <br>
-              <em> 235th Meeting of the American Astronomical Society (AAS)</em>, 2020
-              <br>
-              <p></p>
-              <p>In this study, we studied the effects of different comparison stars on the corresponding light curve and worked with 6 photometric functions.</p>
-            </td>
-          </tr>
-        </tbody></table>
+        <div class="pillars__grid">
 
-      </td>
-    </tr>
-  </table>
+          <!-- Pillar I -->
+          <div class="pillar">
+            <div class="pillar__num">Pillar I</div>
+            <h3 class="pillar__title">Earth Observation &amp; Soil Intelligence</h3>
+            <div class="pillar__org">Earth Intelligence Lab &mdash; Advised by Sherrie Wang &amp; Evan Coleman</div>
+            <p class="pillar__desc">Physics-guided deep learning on NASA EMIT hyperspectral satellite imagery to infer soil geochemical properties at global scale. Core methods include spatiotemporal autoencoders that learn joint spectral-spatial embeddings, multimodal fusion of orbital, atmospheric, and field-collected measurements from YardStick PBC, and physics-constrained spectral reconstruction for interpretable, out-of-distribution-robust carbon inference.</p>
+            <div class="pillar__tags">
+              <span class="tag">Hyperspectral Remote Sensing</span>
+              <span class="tag">Physics-Guided ML</span>
+              <span class="tag">Soil Carbon</span>
+              <span class="tag">NASA EMIT</span>
+              <span class="tag">Spatiotemporal Autoencoders</span>
+            </div>
+          </div>
+
+          <!-- Pillar II -->
+          <div class="pillar">
+            <div class="pillar__num">Pillar II</div>
+            <h3 class="pillar__title">Geospatial Foundation Models &amp; Mineral Intelligence</h3>
+            <div class="pillar__org">MIT MCSC &mdash; Advised by Evan Coleman, Elsa Olivetti &amp; Sherrie Wang</div>
+            <p class="pillar__desc">Continent-scale mineral prospecting through masked geospatial infilling over structured multi-layer grids encoding fault lines, elevation, rock type, and agronomic surveys. Adapts masked modeling pretraining strategies to geospatial segmentation, with direct implications for critical mineral supply chains and carbon capture feedstock discovery.</p>
+            <div class="pillar__tags">
+              <span class="tag">Geospatial AI</span>
+              <span class="tag">Masked Modeling</span>
+              <span class="tag">U-Net / ResNet</span>
+              <span class="tag">Mineral Prospecting</span>
+              <span class="tag">AAAI 2026</span>
+            </div>
+          </div>
+
+          <!-- Pillar III -->
+          <div class="pillar">
+            <div class="pillar__num">Pillar III</div>
+            <h3 class="pillar__title">Computer Vision &amp; Embodied Perception</h3>
+            <div class="pillar__org">Fifth Set Analytics &nbsp;&amp;&nbsp; GT Robot Learning Lab &mdash; Advised by Danfei Xu</div>
+            <p class="pillar__desc">Applied computer vision for real-world perception tasks: automated sports officiating via fine-tuned pose estimation models (MMPose, MMDetection), and human hand-tracking for robotic manipulation using Intel RealSense D435 depth cameras in the context of Franka arm teleoperation. Demonstrates transfer of foundation model priors to constrained deployment environments.</p>
+            <div class="pillar__tags">
+              <span class="tag">Pose Estimation</span>
+              <span class="tag">MMPose / MMDetection</span>
+              <span class="tag">Robot Learning</span>
+              <span class="tag">Intel RealSense</span>
+            </div>
+          </div>
+
+          <!-- Pillar IV — Early Work -->
+          <div class="pillar pillar--minor">
+            <div class="pillar__num">Pillar IV &mdash; Early Work</div>
+            <h3 class="pillar__title">Astronomical Machine Learning</h3>
+            <div class="pillar__org">NASA JPL &mdash; Advised by Kyle Pearson &nbsp;&amp;&nbsp; NASA Exoplanet Watch &mdash; Zellem, Tock</div>
+            <p class="pillar__desc">Early-career research on deep learning for exoplanet transit detection using phase-folded photometric light curves. Developed CNN+LSTM architectures trained on synthetic TESS-mimicking data and contributed to the EXOTIC citizen science pipeline, resulting in 10 publications across AAS, PASP, RNAAS, and SAS.</p>
+            <div class="pillar__tags">
+              <span class="tag">Exoplanet Detection</span>
+              <span class="tag">CNN / LSTM</span>
+              <span class="tag">Light Curve Analysis</span>
+              <span class="tag">Citizen Science</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         PUBLICATIONS
+    ══════════════════════════════════════════ -->
+    <section class="section" id="publications">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__num">02</span>
+          <h2 class="section__title">Publications &amp; Preprints</h2>
+        </div>
+
+        <!-- ── Highlighted Research ── -->
+        <div class="pub-subsection">Highlighted Research</div>
+
+        <div class="hl-grid">
+
+          <!-- HL [14] Earth2EMIT -->
+          <div class="hl-card">
+            <div class="hl-card__num">[14]</div>
+            <div>
+              <div class="hl-card__title">Earth2EMIT: Spatiotemporal Autoencoders for Orbital-Proximal Fusion</div>
+              <div class="hl-card__authors"><strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang</div>
+              <div class="hl-card__meta">
+                <span class="hl-card__venue">Nature</span>
+                <span class="pub-entry__sep"></span>
+                <span class="hl-card__year">Planned</span>
+                <span class="pub-entry__badge">In Preparation</span>
+              </div>
+              <p class="hl-card__desc">All-in-one soil property prediction pipeline fusing NASA EMIT hyperspectral satellite data with geospatial, atmospheric, and high-quality field measurements from YardStick PBC. Uses a physics-guided autoencoder that learns spectral-spatial embeddings to reconstruct soil spectra and predict soil properties.</p>
+            </div>
+          </div>
+
+          <!-- HL [13] Masked Mineral Modeling -->
+          <div class="hl-card">
+            <div class="hl-card__num">[13]</div>
+            <div>
+              <div class="hl-card__title">
+                <a href="https://arxiv.org/abs/2511.09722" target="_blank" rel="noopener">Masked Mineral Modeling: Continent-Scale Mineral Prospecting via Geospatial Infilling</a>
+              </div>
+              <div class="hl-card__authors"><strong>Sujay Nair</strong>, Evan Coleman, Elsa Olivetti, Sherrie Wang</div>
+              <div class="hl-card__meta">
+                <span class="hl-card__venue">AAAI</span>
+                <span class="pub-entry__sep"></span>
+                <span class="hl-card__year">2026</span>
+              </div>
+              <p class="hl-card__desc">Trained a U-Net ResNet to infill the presence of masked minerals based on surrounding mineral resources, geophysical data (fault lines, elevation, rock type), and agronomic data (RaCA). Model outperformed ViT and Kriging baselines with a test Dice coefficient of 0.31.</p>
+              <div class="hl-card__links">
+                <a href="https://arxiv.org/abs/2511.09722" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- HL [12] Structured Spectral Reconstruction -->
+          <div class="hl-card">
+            <div class="hl-card__num">[12]</div>
+            <div>
+              <div class="hl-card__title">
+                <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf" target="_blank" rel="noopener">Structured Spectral Reconstruction for Scalable Soil Organic Carbon Inference</a>
+              </div>
+              <div class="hl-card__authors">Evan Coleman, <strong>Sujay Nair</strong>, Xinyi Zeng, Elsa Olivetti</div>
+              <div class="hl-card__meta">
+                <span class="hl-card__venue">ICLR — Tackling Climate Change with ML Workshop</span>
+                <span class="pub-entry__sep"></span>
+                <span class="hl-card__year">2024</span>
+              </div>
+              <p class="hl-card__desc">Used USDA RaCA data to reconstruct soil organic carbon (SOC) spectra alongside SOC regression to improve out-of-distribution generalization. A physics-based reconstruction pipeline provides an interpretable spectral signature of SOC and avoids generalization failures through fine-tuning.</p>
+              <div class="hl-card__links">
+                <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </div>
+
+        </div><!-- end .hl-grid -->
+
+        <!-- ── Full Publication Record ── -->
+        <div class="pub-subsection">Full Publication Record</div>
+
+        <div class="pub-filters" role="group" aria-label="Filter publications">
+          <span class="pub-filters__label">Filter</span>
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="earth-obs">Remote Sensing</button>
+          <button class="filter-btn" data-filter="geo-ai">Geospatial AI</button>
+          <button class="filter-btn" data-filter="astro">Astronomy</button>
+        </div>
+
+        <div class="pub-list">
+
+          <!-- [14] Earth2EMIT -->
+          <article class="pub-entry" data-category="earth-obs">
+            <div class="pub-entry__num">[14]</div>
+            <div>
+              <div class="pub-entry__title">Earth2EMIT: Spatiotemporal Autoencoders for Orbital-Proximal Fusion</div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">Nature</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">Planned</span>
+                <span class="pub-entry__badge">In Preparation</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- [13] Masked Mineral Modeling -->
+          <article class="pub-entry" data-category="geo-ai">
+            <div class="pub-entry__num">[13]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://arxiv.org/abs/2511.09722" target="_blank" rel="noopener">Masked Mineral Modeling: Continent-Scale Mineral Prospecting via Geospatial Infilling</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Evan Coleman, Elsa Olivetti, Sherrie Wang</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">AAAI</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2026</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://arxiv.org/abs/2511.09722" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [12] Structured Spectral Reconstruction -->
+          <article class="pub-entry" data-category="geo-ai">
+            <div class="pub-entry__num">[12]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf" target="_blank" rel="noopener">Structured Spectral Reconstruction for Scalable Soil Organic Carbon Inference</a>
+              </div>
+              <div class="pub-entry__authors">Evan Coleman, <strong>Sujay Nair</strong>, Xinyi Zeng, Elsa Olivetti</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">ICLR — Tackling Climate Change with ML Workshop</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2024</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [11] Sequence-based Encoding (AAS 238) -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[11]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://aas238-aas.ipostersessions.com/default.aspx?s=D6-D4-C6-F3-C8-6A-7C-61-7B-92-C7-51-44-7D-CB-65" target="_blank" rel="noopener">Sequence-Based Encoding of Light Curves for Exoplanet Detection</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Kyle Pearson</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">AAS 238</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2021</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://aas238-aas.ipostersessions.com/default.aspx?s=D6-D4-C6-F3-C8-6A-7C-61-7B-92-C7-51-44-7D-CB-65" class="pub-link pub-link--paper" target="_blank" rel="noopener">Poster</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [10] Using Deep Learning with Phase Folded -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[10]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://aas237-aas.ipostersessions.com/default.aspx?s=58-67-47-73-08-3F-2E-E4-B8-37-6A-4C-97-26-81-F4" target="_blank" rel="noopener">Using Deep Learning with Phase Folded Light Curves to Detect Exoplanets</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Kyle Pearson</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">AAS 237</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://aas237-aas.ipostersessions.com/default.aspx?s=58-67-47-73-08-3F-2E-E4-B8-37-6A-4C-97-26-81-F4" class="pub-link pub-link--paper" target="_blank" rel="noopener">Abstract</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [9] Citizen Scientist HATS-4b -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[9]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://aas237-aas.ipostersessions.com/Default.aspx?s=32-2B-13-04-05-67-0B-58-28-7A-EB-8B-51-D3-15-56" target="_blank" rel="noopener">Citizen Scientist Transit and Comparison Star Analysis of HATS-4 b with the East Bay Astronomical Society</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Caroline Scolari, Jay Kelath, Aishwarya Rammohan, Richard Ozer, Gloria Ng, Wesley Chang, Pat Boyce</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">AAS 237</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://aas237-aas.ipostersessions.com/Default.aspx?s=32-2B-13-04-05-67-0B-58-28-7A-EB-8B-51-D3-15-56" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+                <a href="https://www.youtube.com/watch?v=KGdnoKfhMPw" class="pub-link pub-link--media" target="_blank" rel="noopener">Video</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [8] Transit Analysis TOI 1780.01 -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[8]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://nexsci.caltech.edu/conferences/exodem/posters/Nair_EXOdemPosterFinal.pdf" target="_blank" rel="noopener">Transit Analysis of TOI 1780.01</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong></div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">ExoDem 2020 Caltech</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://nexsci.caltech.edu/conferences/exodem/posters/Nair_EXOdemPosterFinal.pdf" class="pub-link pub-link--paper" target="_blank" rel="noopener">Poster</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [7] HAT-P-37b and Kepler-45b -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[7]</div>
+            <div>
+              <div class="pub-entry__title">Mid-Transit and Reference Star Analysis of HAT-P-37 b and Kepler-45 b</div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong></div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">Exoplanet3 Heidelberg</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://hdconfsys.zah.uni-heidelberg.de/exoplanets3/poster_list.html" class="pub-link pub-link--paper" target="_blank" rel="noopener">Conference</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [6] TrES-5b and WASP-43b -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[6]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://iopscience.iop.org/article/10.3847/2515-5172/ab98f5" target="_blank" rel="noopener">Transit Analysis of Exoplanets TrES-5b and WASP-43b</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Jonathan Varghese</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">RNAAS &nbsp;/&nbsp; AAS 236</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://iopscience.iop.org/article/10.3847/2515-5172/ab98f5" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+                <a href="https://www.youtube.com/watch?v=pXhum_21gyY" class="pub-link pub-link--media" target="_blank" rel="noopener">Interview</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [5] TOI717.01 and HAT-P-3b -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[5]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://arxiv.org/abs/2006.12658" target="_blank" rel="noopener">Analysis of Candidate Exoplanet TOI717.01 and Confirmed HAT-P-3b</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Krithi Koodli, Elliott Chalcraft, Kalee Tock</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">SAS</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://arxiv.org/abs/2006.12658" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [4] HAT-P-23b, Qatar-1b, WASP-2b, WASP-33b -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[4]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://arxiv.org/abs/2006.13324" target="_blank" rel="noopener">Analysis of HAT-P-23b, Qatar-1b, WASP-2b, and WASP-33b with an Optimized EXOplanet Transit Interpretation Code</a>
+              </div>
+              <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Jonathan Varghese, Kalee Tock, Robert Zellem</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">SAS</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://arxiv.org/abs/2006.13324" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [3] 14 Wide Common Proper Motion Doubles -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[3]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="http://www.jdso.org/volume16/number2/Caputo_173_182.pdf" target="_blank" rel="noopener">Investigation of 14 Wide Common Proper Motion Doubles</a>
+              </div>
+              <div class="pub-entry__authors">Caputo et&nbsp;al. (incl. <strong>Sujay Nair</strong>)</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">JDSO</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="http://www.jdso.org/volume16/number2/Caputo_173_182.pdf" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [2] Utilizing Small Telescopes -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[2]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="https://arxiv.org/abs/2003.09046" target="_blank" rel="noopener">Utilizing Small Telescopes by Citizen Scientists for Transiting Exoplanet Follow-Up</a>
+              </div>
+              <div class="pub-entry__authors">Zellem et&nbsp;al. (incl. <strong>Sujay Nair</strong>)</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">PASP</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="https://arxiv.org/abs/2003.09046" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- [1] Freshening Exoplanet Transit Midpoints -->
+          <article class="pub-entry pub-entry--astro" data-category="astro">
+            <div class="pub-entry__num">[1]</div>
+            <div>
+              <div class="pub-entry__title">
+                <a href="http://tiny.cc/oykfqz" target="_blank" rel="noopener">Freshening Exoplanet Transit Midpoints</a>
+              </div>
+              <div class="pub-entry__authors">Quinn Perian, <strong>Sujay Nair</strong>, Kalee Tock</div>
+              <div class="pub-entry__meta">
+                <span class="pub-entry__venue">AAS 235</span>
+                <span class="pub-entry__sep"></span>
+                <span class="pub-entry__year">2020</span>
+              </div>
+              <div class="pub-entry__links">
+                <a href="http://tiny.cc/oykfqz" class="pub-link pub-link--paper" target="_blank" rel="noopener">Poster</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- end .pub-list -->
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         METHODOLOGY
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt" id="methodology">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__num">03</span>
+          <h2 class="section__title">Methodology &amp; Technical Stack</h2>
+        </div>
+
+        <div class="method-grid">
+
+          <div class="method-card">
+            <div class="method-card__label">Deep Learning Frameworks</div>
+            <ul class="method-card__list">
+              <li>PyTorch</li>
+              <li>MMDetection / MMPose</li>
+              <li>Timm (ViT, ResNet)</li>
+              <li>Scikit-learn</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <div class="method-card__label">Architectures &amp; Methods</div>
+            <ul class="method-card__list">
+              <li>U-Net / ResNet (Segmentation)</li>
+              <li>Vision Transformers (ViT)</li>
+              <li>Spatiotemporal Autoencoders</li>
+              <li>CNN + LSTM Hybrids</li>
+              <li>Masked Autoencoding (MAE-style)</li>
+              <li>Physics-Constrained Networks</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <div class="method-card__label">Data &amp; Sensing</div>
+            <ul class="method-card__list">
+              <li>NASA EMIT Hyperspectral Imagery</li>
+              <li>Google Earth Engine</li>
+              <li>USDA RaCA Soil Surveys</li>
+              <li>USGS Geophysical Data</li>
+              <li>Intel RealSense D435 (Depth)</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <div class="method-card__label">Programming Languages</div>
+            <ul class="method-card__list">
+              <li>Python</li>
+              <li>R</li>
+              <li>Java</li>
+              <li>C &nbsp;/&nbsp; C++</li>
+              <li>x86 &amp; LC3 Assembly</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <div class="method-card__label">Infrastructure</div>
+            <ul class="method-card__list">
+              <li>AWS &nbsp;/&nbsp; Google Cloud</li>
+              <li>Git &nbsp;/&nbsp; GitHub</li>
+              <li>Jupyter &nbsp;/&nbsp; Colab</li>
+              <li>JavaFX</li>
+            </ul>
+          </div>
+
+          <div class="method-card">
+            <div class="method-card__label">Research Domains</div>
+            <ul class="method-card__list">
+              <li>Geophysics &amp; Soil Science</li>
+              <li>Hyperspectral Remote Sensing</li>
+              <li>Climate &amp; Carbon Capture</li>
+              <li>Astrophysics / Exoplanet Science</li>
+              <li>Robotic Manipulation</li>
+              <li>Sports Analytics</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         ABOUT / EDUCATION
+    ══════════════════════════════════════════ -->
+    <section class="section" id="education">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__num">04</span>
+          <h2 class="section__title">Education, Work, &amp; Recognition</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div>
+            <div class="edu-entry">
+              <div class="edu-school">Georgia Institute of Technology</div>
+              <div class="edu-degree">B.S. Computer Science &nbsp;&amp;&nbsp; B.S. Mathematics — Double Major</div>
+              <div class="edu-meta">2022–2026 &nbsp;·&nbsp; GPA 3.9 / 4.0 &nbsp;·&nbsp; Atlanta, GA</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">MIT Climate &amp; Sustainability Consortium</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Fall 2023–Present &nbsp;·&nbsp; Cambridge, MA &nbsp;·&nbsp; Advisors: Dr. Evan Coleman, Prof. Sherrie Wang, Prof. Elsa Olivetti</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">Earth Intelligence Lab</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Summer 2024–Present &nbsp;·&nbsp; Advisors: Prof. Sherrie Wang, Dr. Evan Coleman</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">Fifth Set Analytics</div>
+              <div class="edu-degree">Machine Learning Intern</div>
+              <div class="edu-meta">Summer 2023 &nbsp;·&nbsp; San Francisco, CA</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">GT Robot Learning &amp; Reasoning Lab</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Spring 2023 &nbsp;·&nbsp; Atlanta, GA &nbsp;·&nbsp; Advisor: Prof. Danfei Xu</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">NASA Jet Propulsion Laboratory</div>
+              <div class="edu-degree">Research Intern</div>
+              <div class="edu-meta">Summer / Fall 2021 &nbsp;·&nbsp; Pasadena, CA &nbsp;·&nbsp; Advisor: Dr. Kyle Pearson</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">NASA Exoplanet Watch</div>
+              <div class="edu-degree">Student Researcher</div>
+              <div class="edu-meta">2019–2022 &nbsp;·&nbsp; Advisors: Dr. Rob Zellem, Dr. Kalee Tock</div>
+            </div>
+          </div>
+
+          <div>
+            <ul class="honors-list">
+              <li><span>2022–2026</span> Dean's Scholarship for College of Sciences, Georgia Tech</li>
+              <li><span>2022–Present</span> Dean's List, Georgia Tech</li>
+              <li><span>2022, 2023, 2025</span> Faculty Honors, Georgia Tech</li>
+              <li><span>2021</span> Betty Neall Youth Award of Merit — East Bay Astronomical Society</li>
+              <li><span>2021</span> 1st Place — Washington State Science &amp; Engineering Fair</li>
+              <li><span>2021</span> NASA Earth Sciences Award — WSSEF</li>
+              <li><span>2021</span> Wolfram Research Award — WSSEF</li>
+              <li><span>2020</span> Select Interview — Research Notes of the AAS</li>
+              <li><span>2019</span> President's Award for Educational Excellence</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </div><!-- end .page -->
+
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="footer">
+    <div>
+      Sujay Nair &nbsp;&middot;&nbsp;
+      <a href="mailto:snair303@gatech.edu">snair303@gatech.edu</a> &nbsp;&middot;&nbsp;
+      <a href="https://scholar.google.com/citations?user=axdQX-EAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> &nbsp;&middot;&nbsp;
+      Atlanta, GA
+    </div>
+    <div class="footer__sep"></div>
+  </footer>
+
+
+  <!-- ══════════════════════════════════════════
+       PUBLICATION FILTER SCRIPT
+  ══════════════════════════════════════════ -->
+  <script>
+    (function () {
+      const btns    = document.querySelectorAll('.filter-btn');
+      const entries = document.querySelectorAll('.pub-entry');
+
+      btns.forEach(function (btn) {
+        btn.addEventListener('click', function () {
+          btns.forEach(function (b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+
+          var filter = btn.dataset.filter;
+          entries.forEach(function (entry) {
+            if (filter === 'all' || entry.dataset.category === filter) {
+              entry.classList.remove('hidden');
+            } else {
+              entry.classList.add('hidden');
+            }
+          });
+        });
+      });
+    })();
+  </script>
+
 </body>
-
-  
-  <a href="https://jonbarron.info/">Website Template</a>
 </html>
-
-
-
-
-
