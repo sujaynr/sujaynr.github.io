@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="stylesheet.css?v=2">
+  <link rel="stylesheet" href="stylesheet.css?v=3">
 </head>
 <body>
 
@@ -20,10 +20,10 @@
     <div class="nav__inner">
       <a href="#hero" class="nav__name">Sujay Nair</a>
       <ul class="nav__links">
-        <li><a href="#pillars">Research</a></li>
+        <li><a href="#research">Research</a></li>
+        <li><a href="#education">Experience</a></li>
         <li><a href="#publications">Publications</a></li>
         <li><a href="#methodology">Methods</a></li>
-        <li><a href="#education">Education/Work</a></li>
       </ul>
     </div>
   </nav>
@@ -43,18 +43,18 @@
 
           <p class="hero__statement">My research sits at the intersection of machine learning and planetary-scale sensing — training foundation models that map Earth's mineral resources via satellite hyperspectral imagery, and building physics-guided systems that extract geochemical signal from high-dimensional observational data to advance carbon capture and critical mineral discovery.</p>
 
-          <p class="hero__bio">Fourth-year double major in Computer Science and Mathematics at Georgia Tech (GPA&nbsp;3.9). Research affiliate at the MIT Climate &amp; Sustainability Consortium and Earth Intelligence Lab, advised by Dr.&nbsp;Evan Coleman, Prof.&nbsp;Sherrie Wang, and Prof.&nbsp;Elsa Olivetti. Publications at AAAI, ICLR, Nature&nbsp;(planned).</p>
+          <p class="hero__bio">Fourth-year double major in Computer Science and Mathematics at Georgia Tech. Research affiliate at the MIT Climate &amp; Sustainability Consortium and MIT Earth Intelligence Lab, advised by Dr.&nbsp;Evan Coleman, Prof.&nbsp;Sherrie Wang, and Prof.&nbsp;Elsa Olivetti. Publications at AAAI, ICLR, AAS, PASP, and more.</p>
 
           <div class="hero__links">
             <a href="mailto:snair303@gatech.edu" class="btn btn--primary">Email</a>
-            <a href="CV_Sujay_MARCH26.pdf" class="btn btn--outline">CV</a>
+            <a href="CV_Sujay_Recent.pdf" class="btn btn--outline">CV</a>
             <a href="https://scholar.google.com/citations?user=axdQX-EAAAAJ&hl=en" target="_blank" rel="noopener" class="btn btn--outline">Google Scholar</a>
+            <a href="https://www.linkedin.com/in/sujay-nair-a10014247/" target="_blank" rel="noopener" class="btn btn--outline">LinkedIn</a>
           </div>
         </div>
 
         <div class="hero__photo-col">
           <img src="headPhoto.JPG" alt="Sujay Nair" class="hero__photo">
-          <span class="hero__photo-caption">Atlanta, GA &nbsp;·&nbsp; San Francisco, CA &nbsp;·&nbsp; Cambridge, MA</span>
         </div>
 
       </div>
@@ -62,23 +62,23 @@
 
 
     <!-- ══════════════════════════════════════════
-         RESEARCH PILLARS
+         RESEARCH AREAS  (01)
     ══════════════════════════════════════════ -->
-    <section class="section section--alt" id="pillars">
+    <section class="section section--alt" id="research">
       <div class="section__inner">
         <div class="section__header">
           <span class="section__num">01</span>
-          <h2 class="section__title">Research Pillars</h2>
+          <h2 class="section__title">Research Areas</h2>
         </div>
 
         <div class="pillars__grid">
 
-          <!-- Pillar I -->
+          <!-- Area 01 -->
           <div class="pillar">
-            <div class="pillar__num">Pillar I</div>
-            <h3 class="pillar__title">Earth Observation &amp; Soil Intelligence</h3>
-            <div class="pillar__org">Earth Intelligence Lab &mdash; Advised by Sherrie Wang &amp; Evan Coleman</div>
-            <p class="pillar__desc">Physics-guided deep learning on NASA EMIT hyperspectral satellite imagery to infer soil geochemical properties at global scale. Core methods include spatiotemporal autoencoders that learn joint spectral-spatial embeddings, multimodal fusion of orbital, atmospheric, and field-collected measurements from YardStick PBC, and physics-constrained spectral reconstruction for interpretable, out-of-distribution-robust carbon inference.</p>
+            <div class="pillar__num">01</div>
+            <h3 class="pillar__title">MIT Earth Intelligence Lab — Earth Observation &amp; Soil Intelligence</h3>
+            <div class="pillar__org"><span class="pillar__org-name">MIT Earth Intelligence Lab</span>: Advised by Prof. Sherrie Wang &amp; Dr. Evan Coleman</div>
+            <p class="pillar__desc">Applying machine learning to NASA EMIT satellite imagery to estimate global soil chemistry, combining satellite and field data and incorporating physical constraints to improve reliability and interpretability.</p>
             <div class="pillar__tags">
               <span class="tag">Hyperspectral Remote Sensing</span>
               <span class="tag">Physics-Guided ML</span>
@@ -88,40 +88,40 @@
             </div>
           </div>
 
-          <!-- Pillar II -->
+          <!-- Area 02 -->
           <div class="pillar">
-            <div class="pillar__num">Pillar II</div>
-            <h3 class="pillar__title">Geospatial Foundation Models &amp; Mineral Intelligence</h3>
-            <div class="pillar__org">MIT MCSC &mdash; Advised by Evan Coleman, Elsa Olivetti &amp; Sherrie Wang</div>
-            <p class="pillar__desc">Continent-scale mineral prospecting through masked geospatial infilling over structured multi-layer grids encoding fault lines, elevation, rock type, and agronomic surveys. Adapts masked modeling pretraining strategies to geospatial segmentation, with direct implications for critical mineral supply chains and carbon capture feedstock discovery.</p>
+            <div class="pillar__num">02</div>
+            <h3 class="pillar__title">Geospatial Foundation Models &amp; Mineral Prospecting</h3>
+            <div class="pillar__org"><span class="pillar__org-name">MIT MCSC</span>: Advised by Dr. Evan Coleman, Prof. Elsa Olivetti &amp; Prof. Sherrie Wang</div>
+            <p class="pillar__desc">Training models to predict mineral locations across continents by learning from geophysical data — fault lines, elevation, rock type, and soil surveys. Work has direct implications for critical mineral discovery and carbon capture.</p>
             <div class="pillar__tags">
               <span class="tag">Geospatial AI</span>
               <span class="tag">Masked Modeling</span>
               <span class="tag">U-Net / ResNet</span>
               <span class="tag">Mineral Prospecting</span>
-              <span class="tag">AAAI 2026</span>
             </div>
           </div>
 
-          <!-- Pillar III -->
+          <!-- Area 03 -->
           <div class="pillar">
-            <div class="pillar__num">Pillar III</div>
+            <div class="pillar__num">03</div>
             <h3 class="pillar__title">Computer Vision &amp; Embodied Perception</h3>
-            <div class="pillar__org">Fifth Set Analytics &nbsp;&amp;&nbsp; GT Robot Learning Lab &mdash; Advised by Danfei Xu</div>
-            <p class="pillar__desc">Applied computer vision for real-world perception tasks: automated sports officiating via fine-tuned pose estimation models (MMPose, MMDetection), and human hand-tracking for robotic manipulation using Intel RealSense D435 depth cameras in the context of Franka arm teleoperation. Demonstrates transfer of foundation model priors to constrained deployment environments.</p>
+            <div class="pillar__org"><span class="pillar__org-name">Fifth Set Analytics &amp; GT Robot Learning Lab</span></div>
+            <p class="pillar__desc">Fine-tuning pose estimation models for automated sports officiating and human hand-tracking for robotic manipulation using depth cameras.</p>
             <div class="pillar__tags">
               <span class="tag">Pose Estimation</span>
               <span class="tag">MMPose / MMDetection</span>
               <span class="tag">Robot Learning</span>
+              <span class="tag">Intel RealSense</span>
             </div>
           </div>
 
-          <!-- Pillar IV — Early Work -->
+          <!-- Area 04 — Early Work -->
           <div class="pillar pillar--minor">
-            <div class="pillar__num">Pillar IV &mdash; Early Work</div>
+            <div class="pillar__num">04 &mdash; Early Work</div>
             <h3 class="pillar__title">Astronomical Machine Learning</h3>
-            <div class="pillar__org">NASA JPL &mdash; Advised by Kyle Pearson &nbsp;&amp;&nbsp; NASA Exoplanet Watch &mdash; Zellem, Tock</div>
-            <p class="pillar__desc">Early-career research on deep learning for exoplanet transit detection using phase-folded photometric light curves. Developed CNN+LSTM architectures trained on synthetic TESS-mimicking data and contributed to the EXOTIC citizen science pipeline, resulting in 10 publications across AAS, PASP, RNAAS, and SAS.</p>
+            <div class="pillar__org"><span class="pillar__org-name">NASA JPL &amp; NASA Exoplanet Watch</span></div>
+            <p class="pillar__desc">Early deep learning work on detecting exoplanets from photometric light curves using CNNs and LSTMs. Contributed to NASA's EXOTIC citizen science pipeline with 10 publications.</p>
             <div class="pillar__tags">
               <span class="tag">Exoplanet Detection</span>
               <span class="tag">CNN / LSTM</span>
@@ -136,12 +136,81 @@
 
 
     <!-- ══════════════════════════════════════════
-         PUBLICATIONS
+         EDUCATION & EXPERIENCE  (02)
     ══════════════════════════════════════════ -->
-    <section class="section" id="publications">
+    <section class="section" id="education">
       <div class="section__inner">
         <div class="section__header">
           <span class="section__num">02</span>
+          <h2 class="section__title">Education &amp; Experience</h2>
+        </div>
+
+        <div class="about-grid">
+
+          <div>
+            <div class="edu-entry">
+              <div class="edu-school">Georgia Institute of Technology</div>
+              <div class="edu-degree">B.S. Computer Science &nbsp;&amp;&nbsp; B.S. Mathematics — Double Major</div>
+              <div class="edu-meta">2022–2026 &nbsp;·&nbsp; GPA 3.9 / 4.0 &nbsp;·&nbsp; Atlanta, GA</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">MIT Earth Intelligence Lab</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Summer 2024–Present &nbsp;·&nbsp; Advisors: Prof. Sherrie Wang, Dr. Evan Coleman</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">MIT Climate &amp; Sustainability Consortium</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Fall 2023–Present &nbsp;·&nbsp; Cambridge, MA &nbsp;·&nbsp; Advisors: Dr. Evan Coleman, Prof. Sherrie Wang, Prof. Elsa Olivetti</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">Fifth Set Analytics</div>
+              <div class="edu-degree">Machine Learning Intern</div>
+              <div class="edu-meta">Summer 2023 &nbsp;·&nbsp; San Francisco, CA</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">GT Robot Learning &amp; Reasoning Lab</div>
+              <div class="edu-degree">Undergraduate Research Assistant</div>
+              <div class="edu-meta">Spring 2023 &nbsp;·&nbsp; Atlanta, GA &nbsp;·&nbsp; Advisor: Prof. Danfei Xu</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">NASA Jet Propulsion Laboratory</div>
+              <div class="edu-degree">Research Intern</div>
+              <div class="edu-meta">Summer / Fall 2021 &nbsp;·&nbsp; Pasadena, CA &nbsp;·&nbsp; Advisor: Dr. Kyle Pearson</div>
+            </div>
+            <div class="edu-entry">
+              <div class="edu-school">NASA Exoplanet Watch</div>
+              <div class="edu-degree">Student Researcher</div>
+              <div class="edu-meta">2019–2022 &nbsp;·&nbsp; Advisors: Dr. Rob Zellem, Dr. Kalee Tock</div>
+            </div>
+          </div>
+
+          <div>
+            <ul class="honors-list">
+              <li><span>2022–2026</span> Dean's Scholarship for College of Sciences, Georgia Tech</li>
+              <li><span>2022–Present</span> Dean's List, Georgia Tech</li>
+              <li><span>2022, 2023, 2025</span> Faculty Honors, Georgia Tech</li>
+              <li><span>2021</span> Betty Neall Youth Award of Merit — East Bay Astronomical Society</li>
+              <li><span>2021</span> 1st Place — Washington State Science &amp; Engineering Fair</li>
+              <li><span>2021</span> NASA Earth Sciences Award — WSSEF</li>
+              <li><span>2021</span> Wolfram Research Award — WSSEF</li>
+              <li><span>2020</span> Select Interview — Research Notes of the AAS</li>
+              <li><span>2019</span> President's Award for Educational Excellence</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+    <!-- ══════════════════════════════════════════
+         PUBLICATIONS  (03)
+    ══════════════════════════════════════════ -->
+    <section class="section section--alt" id="publications">
+      <div class="section__inner">
+        <div class="section__header">
+          <span class="section__num">03</span>
           <h2 class="section__title">Publications &amp; Preprints</h2>
         </div>
 
@@ -157,9 +226,6 @@
               <div class="hl-card__title">Earth2EMIT: Spatiotemporal Autoencoders for Orbital-Proximal Fusion</div>
               <div class="hl-card__authors"><strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang</div>
               <div class="hl-card__meta">
-                <span class="hl-card__venue">Nature</span>
-                <span class="pub-entry__sep"></span>
-                <span class="hl-card__year">Planned</span>
                 <span class="pub-entry__badge">In Preparation</span>
               </div>
               <p class="hl-card__desc">All-in-one soil property prediction pipeline fusing NASA EMIT hyperspectral satellite data with geospatial, atmospheric, and high-quality field measurements from YardStick PBC. Uses a physics-guided autoencoder that learns spectral-spatial embeddings to reconstruct soil spectra and predict soil properties.</p>
@@ -199,7 +265,7 @@
                 <span class="pub-entry__sep"></span>
                 <span class="hl-card__year">2024</span>
               </div>
-              <p class="hl-card__desc">Used USDA RaCA data to reconstruct soil organic carbon (SOC) spectra alongside SOC regression to improve out-of-distribution generalization. A physics-based reconstruction pipeline provides an interpretable spectral signature of SOC and avoids generalization failures through fine-tuning.</p>
+              <p class="hl-card__desc">Used USDA RaCA data to reconstruct soil organic carbon spectra alongside SOC regression to improve out-of-distribution generalization. A physics-based pipeline provides an interpretable spectral signature of SOC and avoids generalization failures through fine-tuning.</p>
               <div class="hl-card__links">
                 <a href="https://s3.us-east-1.amazonaws.com/climate-change-ai/papers/iclr2024/2/paper.pdf" class="pub-link pub-link--paper" target="_blank" rel="noopener">Paper</a>
               </div>
@@ -214,7 +280,7 @@
         <div class="pub-filters" role="group" aria-label="Filter publications">
           <span class="pub-filters__label">Filter</span>
           <button class="filter-btn active" data-filter="all">All</button>
-          <button class="filter-btn" data-filter="earth-obs">Remote Sensing</button>
+          <button class="filter-btn" data-filter="earth-obs">Earth Observation</button>
           <button class="filter-btn" data-filter="geo-ai">Geospatial AI</button>
           <button class="filter-btn" data-filter="astro">Astronomy</button>
         </div>
@@ -228,9 +294,6 @@
               <div class="pub-entry__title">Earth2EMIT: Spatiotemporal Autoencoders for Orbital-Proximal Fusion</div>
               <div class="pub-entry__authors"><strong>Sujay Nair</strong>, Evan Coleman, Sherrie Wang</div>
               <div class="pub-entry__meta">
-                <span class="pub-entry__venue">Nature</span>
-                <span class="pub-entry__sep"></span>
-                <span class="pub-entry__year">Planned</span>
                 <span class="pub-entry__badge">In Preparation</span>
               </div>
             </div>
@@ -489,12 +552,12 @@
 
 
     <!-- ══════════════════════════════════════════
-         METHODOLOGY
+         METHODOLOGY  (04)
     ══════════════════════════════════════════ -->
-    <section class="section section--alt" id="methodology">
+    <section class="section" id="methodology">
       <div class="section__inner">
         <div class="section__header">
-          <span class="section__num">03</span>
+          <span class="section__num">04</span>
           <h2 class="section__title">Methodology &amp; Technical Stack</h2>
         </div>
 
@@ -526,14 +589,10 @@
             <div class="method-card__label">Data &amp; Sensing</div>
             <ul class="method-card__list">
               <li>NASA EMIT Hyperspectral Imagery</li>
-              <li>Sentinel-2 Multispectral (ESA)</li>
-              <li>NAIP/NAIPP Aerial Imagery</li>
-              <li>SRTM Elevation Data</li>
-              <li>CHIRPS / CHIRTS Precipitation &amp; Temperature</li>
-              <li>AlphaEarth</li>
               <li>Google Earth Engine</li>
-              <li>USDA RaCA Soil Survey</li>
+              <li>USDA RaCA Soil Surveys</li>
               <li>USGS Geophysical Data</li>
+              <li>Intel RealSense D435 (Depth)</li>
             </ul>
           </div>
 
@@ -574,75 +633,6 @@
       </div>
     </section>
 
-
-    <!-- ══════════════════════════════════════════
-         ABOUT / EDUCATION
-    ══════════════════════════════════════════ -->
-    <section class="section" id="education">
-      <div class="section__inner">
-        <div class="section__header">
-          <span class="section__num">04</span>
-          <h2 class="section__title">Education, Work, &amp; Recognition</h2>
-        </div>
-
-        <div class="about-grid">
-
-          <div>
-            <div class="edu-entry">
-              <div class="edu-school">Georgia Institute of Technology</div>
-              <div class="edu-degree">B.S. Computer Science &nbsp;&amp;&nbsp; B.S. Mathematics — Double Major</div>
-              <div class="edu-meta">2022–2026 &nbsp;·&nbsp; GPA 3.9 / 4.0 &nbsp;·&nbsp; Atlanta, GA</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">MIT Climate &amp; Sustainability Consortium</div>
-              <div class="edu-degree">Undergraduate Research Assistant</div>
-              <div class="edu-meta">Fall 2023–Present &nbsp;·&nbsp; Cambridge, MA &nbsp;·&nbsp; Advisors: Dr. Evan Coleman, Prof. Sherrie Wang, Prof. Elsa Olivetti</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">Earth Intelligence Lab</div>
-              <div class="edu-degree">Undergraduate Research Assistant</div>
-              <div class="edu-meta">Summer 2024–Present &nbsp;·&nbsp; Advisors: Prof. Sherrie Wang, Dr. Evan Coleman</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">Fifth Set Analytics</div>
-              <div class="edu-degree">Machine Learning Intern</div>
-              <div class="edu-meta">Summer 2023 &nbsp;·&nbsp; San Francisco, CA</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">GT Robot Learning &amp; Reasoning Lab</div>
-              <div class="edu-degree">Undergraduate Research Assistant</div>
-              <div class="edu-meta">Spring 2023 &nbsp;·&nbsp; Atlanta, GA &nbsp;·&nbsp; Advisor: Prof. Danfei Xu</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">NASA Jet Propulsion Laboratory</div>
-              <div class="edu-degree">Research Intern</div>
-              <div class="edu-meta">Summer / Fall 2021 &nbsp;·&nbsp; Pasadena, CA &nbsp;·&nbsp; Advisor: Dr. Kyle Pearson</div>
-            </div>
-            <div class="edu-entry">
-              <div class="edu-school">NASA Exoplanet Watch</div>
-              <div class="edu-degree">Student Researcher</div>
-              <div class="edu-meta">2019–2022 &nbsp;·&nbsp; Advisors: Dr. Rob Zellem, Dr. Kalee Tock</div>
-            </div>
-          </div>
-
-          <div>
-            <ul class="honors-list">
-              <li><span>2022–2026</span> Dean's Scholarship for College of Sciences, Georgia Tech</li>
-              <li><span>2022–Present</span> Dean's List, Georgia Tech</li>
-              <li><span>2022, 2023, 2025</span> Faculty Honors, Georgia Tech</li>
-              <li><span>2021</span> Betty Neall Youth Award of Merit — East Bay Astronomical Society</li>
-              <li><span>2021</span> 1st Place — Washington State Science &amp; Engineering Fair</li>
-              <li><span>2021</span> NASA Earth Sciences Award — WSSEF</li>
-              <li><span>2021</span> Wolfram Research Award — WSSEF</li>
-              <li><span>2020</span> Select Interview — Research Notes of the AAS</li>
-              <li><span>2019</span> President's Award for Educational Excellence</li>
-            </ul>
-          </div>
-
-        </div>
-      </div>
-    </section>
-
   </div><!-- end .page -->
 
 
@@ -652,10 +642,12 @@
   <footer class="footer">
     <div>
       Sujay Nair &nbsp;&middot;&nbsp;
-      US Citizen &nbsp;&middot;&nbsp;
-      San Francisco, CA &nbsp;&middot;&nbsp; Atlanta, GA &nbsp;&middot;&nbsp; Cambridge, MA
+      <a href="mailto:snair303@gatech.edu">snair303@gatech.edu</a> &nbsp;&middot;&nbsp;
+      <a href="https://scholar.google.com/citations?user=axdQX-EAAAAJ&hl=en" target="_blank" rel="noopener">Google Scholar</a> &nbsp;&middot;&nbsp;
+      <a href="https://www.linkedin.com/in/sujay-nair-a10014247/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
     <div class="footer__sep"></div>
+    <div style="font-size:0.64rem; opacity:0.55;">Adapted from <a href="https://jonbarron.info/" target="_blank" rel="noopener">Jon Barron's template</a></div>
   </footer>
 
 

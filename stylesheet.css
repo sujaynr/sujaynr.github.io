@@ -289,22 +289,17 @@ a { text-decoration: none; transition: color 0.15s; }
 }
 .pillar--minor .pillar__title { color: var(--text-mid); }
 .pillar__org {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   font-family: var(--font-sans);
   font-size: 0.72rem;
   font-weight: 500;
   color: var(--text-muted);
   margin-bottom: 1rem;
 }
-.pillar__org::before {
-  content: '';
-  display: block;
-  width: 14px;
-  height: 1.5px;
-  background: var(--border-strong);
-  flex-shrink: 0;
+.pillar__org-name {
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  color: var(--text-mid);
+  font-weight: 600;
 }
 .pillar__desc {
   font-family: var(--font-sans);
